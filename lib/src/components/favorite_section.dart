@@ -37,7 +37,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
                 ? const Icon(Icons.star)
                 : const Icon(Icons.star_border)),
             color: Colors.red[500],
-            onPressed: _toggleFavorite,
+            onPressed: () => {},
           ),
         ),
         SizedBox(
