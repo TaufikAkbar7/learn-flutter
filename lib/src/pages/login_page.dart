@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:learnflutter/src/components/form_login_section.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -31,16 +32,12 @@ class LoginPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Login page'),
         ),
-        body: Center(
-          child: ElevatedButton(
-            // Within the SecondScreen widget
-            onPressed: () {
-              // Navigate back to the first screen by popping the current route
-              // off the stack.
-              context.goNamed('home');
-            },
-            child: const Text('Go back!'),
-          ),
+        body: const Center(
+          child: Column(
+            children: [
+              FormLoginSection()
+            ],
+          )
         ),
       ),
     );
